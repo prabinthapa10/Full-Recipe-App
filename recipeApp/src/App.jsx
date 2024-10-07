@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Container from "./components/Container";
 import InnerContainer from "./components/InnerContainer";
 import FooItem from "./components/Foodtem";
+import FoodDetails from "./components/FoodDetails";
 
 export default function () {
   // state variable to store food data
@@ -17,6 +18,9 @@ export default function () {
         <Container>
           <InnerContainer>
             <FoodList foodData={foodData} />
+          </InnerContainer>
+          <InnerContainer>
+            <FoodDetails />
           </InnerContainer>
         </Container>
       </>

@@ -1,3 +1,5 @@
 .innerContainer {
-  background-color: black;
+  background-color: rgb(192, 155, 155);
+  flex: 1;
+  margin: 10px;
 }
