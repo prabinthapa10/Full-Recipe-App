@@ -10,6 +10,9 @@ import FoodDetails from "./components/FoodDetails";
 export default function () {
   // state variable to store food data
   const [foodData, setFoodData] = useState([]);
+
+  // to store foodId which clicked
+  const [foodId, setFoodId] = useState("");
   return (
     <div>
       <>
@@ -17,10 +20,10 @@ export default function () {
         <Search foodData={foodData} setFoodData={setFoodData} />
         <Container>
           <InnerContainer>
-            <FoodList foodData={foodData} />
+            <FoodList setFoodId={setFoodId} foodData={foodData} />
           </InnerContainer>
           <InnerContainer>
-            <FoodDetails />
+            <FoodDetails foodId={foodId} />
           </InnerContainer>
         </Container>
       </>
